@@ -17,8 +17,8 @@
         </div>
       </div>
 
-      <div class="mx-auto">
-        <WaitlistImage />
+      <div>
+        <WaitlistImage class="d-block mx-auto" />
       </div>
 
       <div class="mt-3 content">
@@ -30,7 +30,7 @@
           revolution! 🚀
         </p>
         <button
-          class="btn mt-3"
+          class="btn waitlist-btn mt-3 d-block mx-auto"
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
         >
@@ -64,14 +64,16 @@
           ></button>
         </div>
         <div class="modal-body">
-          <router-link class="dct-btn-wrapper" :to="{ name: 'doctor' }"
-            ><button class="doctor-btn">Doctor</button></router-link
-          >
-          <router-link :to="{ name: 'patient' }"
-            ><button class="patient-btn ms-3">Patient</button></router-link
-          >
+          <div class="d-flex align-items-center justify-content-center">
+            <router-link class="dct-btn-wrapper" :to="{ name: 'doctor' }"
+              ><button class="doctor-btn">Doctor</button></router-link
+            >
+            <router-link :to="{ name: 'patient' }"
+              ><button class="patient-btn ms-3">Patient</button></router-link
+            >
+          </div>
 
-          <div class="mt-5">
+          <div class="mt-3">
             <router-view></router-view>
           </div>
         </div>

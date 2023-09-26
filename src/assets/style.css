@@ -2,11 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  /* background: #011940; */
-  /* background: #080b12;
-   */
-  background: #0b101c;
-  font-family: "Roboto", sans-serif;
+  background: #222;
+  font-family: "Rubik", sans-serif;
 }
 .waitlist-wrapper {
   padding: 20px;
@@ -24,6 +21,10 @@ body {
   background: #232835;
   color: #fff;
 }
+.form-control,
+.form-control:focus {
+  border: 1px solid #222;
+}
 .content > .btn:focus,
 .content > .btn:hover {
   background: #232835 !important;
@@ -37,15 +38,28 @@ body {
   border: none;
   color: #fff;
   transition: 600ms ease-in;
+  border-radius: 8px;
 }
 
 .doctor-btn:hover,
 .patient-btn:hover {
-  background: lightgreen !important;
+  background-color: #00acb1 !important;
 }
-
+.waitlist-btn {
+  background-color: #00acb1 !important ;
+  transition: 600ms ease-in;
+}
+.waitlist-btn:hover {
+  background-color: #222 !important;
+}
 .submit-btn {
   padding: 12px 40px;
-  background: #232835;
+  background: #00acb1;
   color: #fff;
+  transition: 600ms ease-in;
+  border: none;
+  border-radius: 8px;
+}
+.submit-btn:hover {
+  background-color: #222;
 }

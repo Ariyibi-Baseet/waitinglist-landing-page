@@ -2,6 +2,9 @@
   <div>
     <div class="mb-3">
       <div class="row">
+        <small class="text-danger d-block text-center mb-3"
+          >Note: This form is strictly for Doctors</small
+        >
         <div class="col">
           <label class="form-label">First Name</label>
           <input type="text" class="form-control shadow-none" placeholder="" />
