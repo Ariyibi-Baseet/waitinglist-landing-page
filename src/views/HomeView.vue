@@ -21,7 +21,7 @@
         <WaitlistImage />
       </div>
 
-      <div class="mt-3">
+      <div class="mt-3 content">
         <h4 class="text-center text-white">
           Be the First to Experience Health & Wellness Like Never Before!
         </h4>
@@ -29,7 +29,62 @@
           Don't miss out—reserve your spot today and be part of our health
           revolution! 🚀
         </p>
-        <button class="btn mt-3">Join waitlist now</button>
+        <button
+          class="btn mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Join waitlist now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL BOX FOR FORMDATA -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            Choose Your Status
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <router-link class="dct-btn-wrapper" :to="{ name: 'doctor' }"
+            ><button class="doctor-btn">Doctor</button></router-link
+          >
+          <router-link :to="{ name: 'patient' }"
+            ><button class="patient-btn ms-3">Patient</button></router-link
+          >
+
+          <div class="mt-5">
+            <router-view></router-view>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
       </div>
     </div>
   </div>

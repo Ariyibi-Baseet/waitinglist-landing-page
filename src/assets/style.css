@@ -19,13 +19,33 @@ body {
   font-size: 50px;
 }
 
-.btn {
+.content > .btn {
   padding: 12px 40px !important;
   background: #232835;
   color: #fff;
 }
-.btn:focus,
-.btn:hover {
+.content > .btn:focus,
+.content > .btn:hover {
   background: #232835 !important;
+  color: #fff;
+}
+
+.doctor-btn,
+.patient-btn {
+  padding: 12px 40px;
+  background: #232835;
+  border: none;
+  color: #fff;
+  transition: 600ms ease-in;
+}
+
+.doctor-btn:hover,
+.patient-btn:hover {
+  background: lightgreen !important;
+}
+
+.submit-btn {
+  padding: 12px 40px;
+  background: #232835;
   color: #fff;
 }
